@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <title>OpenBazaar in the browser</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  </head>
+  <body>
+    <h1>OpenBazaar node running \o/</h1>
+    <div id="my-peer"></div><br>
+    <form id="submitForm">
+          Enter PeerID:<br>
+          <input type="text" id="peerID">
+          <br><br>
+          <input type="submit" value="Connect">
+    </form>
+    <br>
+    <div id="swarm"></div>
+    <div id="chat" style="display:none;">
+        <div id="chatBox" style="overflow-wrap: break-word; overflow-y: scroll; border-style: solid; width: 500px; height: 500px;"></div><br>
+        <input type="text" id="chatMessage" style="width: 400px; margin-right:7px"><input type="submit" id="send" value="Send" style="width: 90px;">
+    </div>
+    <script src="bundle.js"></script>
+  </body>
+</html>
